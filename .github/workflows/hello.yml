@@ -4,10 +4,10 @@ on: push        # イベント（プッシュ時に起動）
 
 jobs:           # ジョブの定義
 
-hello:          # ジョブID
+    hello:          # ジョブID
 
-runs-on: ubuntu-latest  # ランナー
+        runs-on: ubuntu-latest  # ランナー
 
-steps:  #ステップの定義
-    - run: echo "Hello. world"  # シェルコマンドの実行
-    - uses: actions/checkout@v4 # アクションの呼び出し
+        steps:  #ステップの定義
+            - run: echo "Hello. world"  # シェルコマンドの実行
+            - uses: actions/checkout@v4 # アクションの呼び出し
